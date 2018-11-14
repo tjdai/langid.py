@@ -309,7 +309,7 @@ class LanguageIdentifier(object):
   def classify_with_language(self, text, langs):
       self.set_languages(langs=langs)
 
-      self.classify(text)
+      return self.classify(text)
 
   def classify(self, text):
     """
